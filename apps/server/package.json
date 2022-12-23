@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bike src/index.ts dist/index.js --dev",
+    "build": "bike src/index.ts dist/index.js --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.10.2"
+  },
+  "devDependencies": {
+    "bike": "^1.0.9"
+  }
+}

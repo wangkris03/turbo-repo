@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/.pnpm/bike@1.0.9/node_modules/bike/inject.js", "../src/index.ts"],
+  "sourcesContent": ["require(\"source-map-support\").install();\n", "import fastify from 'fastify';\r\n\r\nconst app = fastify();\r\n\r\napp.get('/', async () => {\r\n  return { msg: 'hello world example' };\r\n});\r\n\r\napp.get('/v1/hello', async () => {\r\n  return { msg: 'world' };\r\n});\r\n\r\nconsole.log('Server listen: http://localhost:5000');\r\n\r\n// setTimeout(() => {\r\n//   module();\r\n// }, 100);\r\n\r\nfunction fibonacci(n: number) {\r\n  if (n == 0 || n == 1) return n;\r\n  return fibonacci(n - 1) + fibonacci(n - 2);\r\n}\r\n\r\nasync function start() {\r\n  console.time('js');\r\n  fibonacci(43);\r\n  console.timeEnd('js');\r\n}\r\n\r\nstart();\r\n\r\napp.listen({ port: 5000 });"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA,QAAQ,sBAAsB,QAAQ;;;ACAtC,qBAAoB;AAEpB,IAAM,UAAM,eAAAA,SAAQ;AAEpB,IAAI,IAAI,KAAK,YAAY;AACvB,SAAO,EAAE,KAAK,sBAAsB;AACtC,CAAC;AAED,IAAI,IAAI,aAAa,YAAY;AAC/B,SAAO,EAAE,KAAK,QAAQ;AACxB,CAAC;AAED,QAAQ,IAAI,sCAAsC;AAMlD,SAAS,UAAU,GAAW;AAC5B,MAAI,KAAK,KAAK,KAAK;AAAG,WAAO;AAC7B,SAAO,UAAU,IAAI,CAAC,IAAI,UAAU,IAAI,CAAC;AAC3C;AAEA,eAAe,QAAQ;AACrB,UAAQ,KAAK,IAAI;AACjB,YAAU,EAAE;AACZ,UAAQ,QAAQ,IAAI;AACtB;AAEA,MAAM;AAEN,IAAI,OAAO,EAAE,MAAM,IAAK,CAAC;",
+  "names": ["fastify"]
+}
